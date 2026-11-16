@@ -1,6 +1,6 @@
 # Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: NoName
 - Mã thành viên (ba chữ số):
 - Người điều phối:
 - Người review bản cuối:

@@ -31,9 +31,12 @@ def main() -> None:
                     "mutable": False,
                     "input_type": a["type"],
                     "default_value": str(a.get("default", "")),
-                    "values": [str(v) for v in a.get("values", [])] if a["type"] == "select" else [],
+                    # CVAT yêu cầu checkbox có values không rỗng: dùng giá trị mặc định ("false").
+                    "values": ([str(v) for v in a.get("values", [])] if a["type"] == "select"
+                               else [str(a.get("default", "false"))]),
                 })
-        labels.append({"name": name, "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
+        # CVAT bản mới bắt buộc trường "type" cho mỗi label; lab chỉ dùng box chữ nhật.
+        labels.append({"name": name, "type": "rectangle", "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
                        "attributes": attrs})
     text = json.dumps(labels, ensure_ascii=False, indent=2)
     out = ROOT / "cvat" / ("labels_final.json" if args.final else "labels_generated.json")
