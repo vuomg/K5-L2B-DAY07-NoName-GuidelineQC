@@ -232,10 +232,16 @@ class WorkflowTest(unittest.TestCase):
         self.assertIn("**RELEASE**", self.run_script("qc_report", "--round", "2"))
 
     def test_assignment_rejects_unsafe_member_and_symlink_destination(self):
+        import platform
         self.run_script("split_assign", "--members", "../data,102", "--copy-images", success=False)
         output = self.root / "work"
         output.mkdir()
-        (output / "101").symlink_to(self.root / "data", target_is_directory=True)
+        # On Windows, use junction instead of symlink (no admin required)
+        if platform.system() == "Windows":
+            import subprocess
+            subprocess.run(["cmd", "/c", "mklink", "/J", str(output / "101"), str(self.root / "data")], check=True)
+        else:
+            (output / "101").symlink_to(self.root / "data", target_is_directory=True)
         self.run_script("split_assign", "--members", "101,102", "--copy-images", success=False)
         self.assertEqual(sorted(path.name for path in self.images.iterdir()), self.names)
 
