@@ -1,0 +1,61 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_002.jpg,bo_sot_thua,053|345,car,,"[727,266,93,126]",,,Chỉ 053 vẽ car này. 345 bỏ sót hoặc 053 vẽ thừa.
+C002,img_002.jpg,iou_thap,053|345,car,car,"[483,252,114,131]","[529,252,68,131]",0.60,IoU 0.60 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C003,img_003.jpg,bo_sot_thua,052|345,,person,,"[0,155,83,89]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C004,img_003.jpg,bo_sot_thua,052|345,,person,,"[186,38,36,71]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C005,img_003.jpg,bo_sot_thua,052|345,,person,,"[467,41,87,178]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C006,img_003.jpg,bo_sot_thua,052|345,,person,,"[499,0,211,384]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C007,img_003.jpg,bo_sot_thua,052|345,,person,,"[448,16,36,82]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C008,img_003.jpg,bo_sot_thua,052|345,,person,,"[235,64,129,129]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C009,img_003.jpg,bo_sot_thua,052|345,,person,,"[681,3,101,239]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C010,img_003.jpg,bo_sot_thua,052|345,,person,,"[94,3,223,563]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C011,img_003.jpg,bo_sot_thua,052|345,,car,,"[276,37,81,51]",,Chỉ 345 vẽ car này. 052 bỏ sót hoặc 345 vẽ thừa.
+C012,img_003.jpg,bo_sot_thua,052|345,,person,,"[405,26,21,24]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C013,img_004.jpg,bo_sot_thua,053|345,,motorcycle,,"[437,100,416,347]",,Chỉ 345 vẽ motorcycle này. 053 bỏ sót hoặc 345 vẽ thừa.
+C014,img_004.jpg,bo_sot_thua,053|345,,motorcycle,,"[74,71,414,519]",,Chỉ 345 vẽ motorcycle này. 053 bỏ sót hoặc 345 vẽ thừa.
+C015,img_004.jpg,bo_sot_thua,053|345,,person,,"[232,126,105,108]",,Chỉ 345 vẽ person này. 053 bỏ sót hoặc 345 vẽ thừa.
+C016,img_004.jpg,bo_sot_thua,053|345,,person,,"[579,160,88,191]",,Chỉ 345 vẽ person này. 053 bỏ sót hoặc 345 vẽ thừa.
+C017,img_005.jpg,iou_thap,052|053,van,van,"[59,25,901,325]","[72,25,888,386]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C018,img_005.jpg,sai_lop,052|053,car,van,"[0,74,81,97]","[0,74,81,97]",1.00,"052 gán car, 053 gán van cho cùng một vật"
+C019,img_007.jpg,co_can_review,053,car,,"[384,240,225,169]",,,"053 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C020,img_008.jpg,bo_sot_thua,052|053,motorcycle,,"[1,562,177,75]",,,Chỉ 052 vẽ motorcycle này. 053 bỏ sót hoặc 052 vẽ thừa.
+C021,img_008.jpg,bo_sot_thua,052|053,person,,"[0,161,38,116]",,,Chỉ 052 vẽ person này. 053 bỏ sót hoặc 052 vẽ thừa.
+C022,img_008.jpg,bo_sot_thua,052|053,,truck,,"[628,163,103,121]",,Chỉ 053 vẽ truck này. 052 bỏ sót hoặc 053 vẽ thừa.
+C023,img_008.jpg,bo_sot_thua,052|053,,person,,"[192,196,45,56]",,Chỉ 053 vẽ person này. 052 bỏ sót hoặc 053 vẽ thừa.
+C024,img_009.jpg,bo_sot_thua,052|345,van,,"[356,370,308,120]",,,Chỉ 052 vẽ van này. 345 bỏ sót hoặc 052 vẽ thừa.
+C025,img_009.jpg,bo_sot_thua,052|345,,person,,"[373,398,19,29]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C026,img_009.jpg,bo_sot_thua,052|345,,person,,"[597,400,26,23]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C027,img_012.jpg,bo_sot_thua,053|345,,car,,"[0,282,251,180]",,Chỉ 345 vẽ car này. 053 bỏ sót hoặc 345 vẽ thừa.
+C028,img_012.jpg,bo_sot_thua,053|345,,truck,,"[291,248,666,381]",,Chỉ 345 vẽ truck này. 053 bỏ sót hoặc 345 vẽ thừa.
+C029,img_012.jpg,bo_sot_thua,053|345,,truck,,"[326,207,156,193]",,Chỉ 345 vẽ truck này. 053 bỏ sót hoặc 345 vẽ thừa.
+C030,img_012.jpg,bo_sot_thua,053|345,,car,,"[296,295,30,29]",,Chỉ 345 vẽ car này. 053 bỏ sót hoặc 345 vẽ thừa.
+C031,img_012.jpg,sai_lop,053|345,car,truck,"[291,248,666,381]","[291,248,666,381]",1.00,"053 gán car, 345 gán truck cho cùng một vật"
+C032,img_013.jpg,bo_sot_thua,052|053,motorcycle,,"[253,443,61,41]",,,Chỉ 052 vẽ motorcycle này. 053 bỏ sót hoặc 052 vẽ thừa.
+C033,img_016.jpg,co_can_review,052,car,,"[0,275,328,252]",,,"052 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C034,img_016.jpg,sai_lop,052|345,car,truck,"[0,275,328,252]","[1,277,327,259]",0.95,"052 gán car, 345 gán truck cho cùng một vật"
+C035,img_019.jpg,bo_sot_thua,053|345,person,,"[2,28,958,382]",,,Chỉ 053 vẽ person này. 345 bỏ sót hoặc 053 vẽ thừa.
+C036,img_021.jpg,bo_sot_thua,052|053,,person,,"[150,253,62,95]",,Chỉ 053 vẽ person này. 052 bỏ sót hoặc 053 vẽ thừa.
+C037,img_022.jpg,co_can_review,053,motorcycle,,"[483,477,203,144]",,,"053 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C038,img_022.jpg,iou_thap,053|345,motorcycle,motorcycle,"[483,477,203,144]","[483,477,112,144]",0.55,IoU 0.55 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C039,img_023.jpg,bo_sot_thua,052|053,,person,,"[90,132,24,62]",,Chỉ 053 vẽ person này. 052 bỏ sót hoặc 053 vẽ thừa.
+C040,img_024.jpg,bo_sot_thua,052|345,,car,,"[1,540,194,175]",,Chỉ 345 vẽ car này. 052 bỏ sót hoặc 345 vẽ thừa.
+C041,img_024.jpg,co_can_review,052,car,,"[242,40,460,209]",,,"052 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C042,img_027.jpg,co_can_review,053,truck,,"[353,204,525,288]",,,"053 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C043,img_030.jpg,bo_sot_thua,052|345,,person,,"[698,26,83,245]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C044,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[233,130,134,219]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C045,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[347,277,590,434]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C046,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[350,173,143,141]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C047,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[82,177,253,238]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C048,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[905,88,55,134]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C049,img_030.jpg,bo_sot_thua,052|345,,person,,"[697,54,30,33]",,Chỉ 345 vẽ person này. 052 bỏ sót hoặc 345 vẽ thừa.
+C050,img_030.jpg,bo_sot_thua,052|345,,motorcycle,,"[3,378,478,335]",,Chỉ 345 vẽ motorcycle này. 052 bỏ sót hoặc 345 vẽ thừa.
+C051,img_030.jpg,co_can_review,052,motorcycle,,"[905,88,55,134]",,,"052 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C052,img_030.jpg,co_can_review,052,person,,"[697,54,30,33]",,,"052 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C053,img_034.jpg,bo_sot_thua,053|345,person,,"[174,232,23,46]",,,Chỉ 053 vẽ person này. 345 bỏ sót hoặc 053 vẽ thừa.
+C054,img_035.jpg,bo_sot_thua,052|345,car,,"[381,209,136,202]",,,Chỉ 052 vẽ car này. 345 bỏ sót hoặc 052 vẽ thừa.
+C055,img_035.jpg,bo_sot_thua,052|345,car,,"[736,215,104,197]",,,Chỉ 052 vẽ car này. 345 bỏ sót hoặc 052 vẽ thừa.
+C056,img_037.jpg,bo_sot_thua,052|053,,truck,,"[714,235,52,116]",,Chỉ 053 vẽ truck này. 052 bỏ sót hoặc 053 vẽ thừa.
+C057,img_037.jpg,co_can_review,053,truck,,"[218,139,508,357]",,,"053 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C058,img_040.jpg,bo_sot_thua,053|345,car,,"[74,96,117,146]",,,Chỉ 053 vẽ car này. 345 bỏ sót hoặc 053 vẽ thừa.
+C059,img_040.jpg,bo_sot_thua,053|345,,car,,"[15,251,562,381]",,Chỉ 345 vẽ car này. 053 bỏ sót hoặc 345 vẽ thừa.
+C060,img_040.jpg,iou_thap,053|345,car,car,"[20,143,940,489]","[20,248,937,384]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
