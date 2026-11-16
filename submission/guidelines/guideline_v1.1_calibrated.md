@@ -156,6 +156,8 @@ Các ảnh còn lại (010, 012, 013, 025, 031, 034, 039) áp dụng trực ti�
 
 ## 6. Giải quyết bất đồng giữa các bản cá nhân
 
+Cột 101 / 102 / 103 là mã tạm lúc viết nháp; tương ứng với thành viên **101 = 052**, **102 = 345**, **103 = 053** (`submission/guidelines/individual/`).
+
 | # | Vấn đề | 101 | 102 | 103 | **Chốt v1.0** | Lý do |
 |---|---|---|---|---|---|---|
 | 1 | Box xe máy có bao người? | Không | Có | Không | **Không** (R-01) | 2/3 đồng ý. Box xe có bao người thì lệch nhiều theo tư thế người, nên IoU giữa người gán thấp. Tách riêng thì mô hình học được hình dạng xe thật. |
