@@ -1,0 +1,67 @@
+case_id,image,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline,nguoi_chot,phieu_sua,kiem_lai,pham_vi
+C001,img_002.jpg,"Gán car: xe tầng dưới thấy >= 25%, 345 bỏ sót",R-06,v1.1,052,"img_002: giữ box car [727,266,93,126], occluded_level=1",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C002,img_002.jpg,Box car phải ôm cả phần thấy qua khung giàn; lấy box của 053,"R-04,R-06",v1.1,052,"img_002: car dùng [483,252,114,131]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C003,img_003.jpg,"Gán person (người ngồi mép trái), 052 bỏ sót","R-01,R-04",v1.1,052,"img_003: thêm person [0,155,83,89], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C004,img_003.jpg,"Gán person nền, 052 bỏ sót",R-04,v1.1,052,"img_003: thêm person [186,38,36,71]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C005,img_003.jpg,"Gán person trên xe máy, 052 bỏ sót",R-01,v1.1,052,"img_003: thêm person [467,41,87,178]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C006,img_003.jpg,"Gán person người gánh hàng, box không bao quang gánh",R-07,v1.1,052,"img_003: thêm person [499,0,211,384], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C007,img_003.jpg,"Gán person nền, 052 bỏ sót",R-04,v1.1,052,"img_003: thêm person [448,16,36,82]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C008,img_003.jpg,"Gán person người dắt xe máy, 052 bỏ sót",R-01,v1.1,052,"img_003: thêm person [235,64,129,129]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C009,img_003.jpg,"Gán person người đội nón, 052 bỏ sót",R-04,v1.1,052,"img_003: thêm person [681,3,101,239], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C010,img_003.jpg,"Gán person người áo đỏ, 052 bỏ sót",R-04,v1.1,052,"img_003: thêm person [94,3,223,563], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C011,img_003.jpg,"Gán car nền (cao 51 px), 052 bỏ sót",R-08,v1.1,052,"img_003: thêm car [276,37,81,51]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C012,img_003.jpg,"Gán person nhỏ (cao 24 px >= 20), 052 bỏ sót",R-08,v1.1,052,"img_003: thêm person [405,26,21,24]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C013,img_004.jpg,Tuk-tuk là car theo quy tắc mới (xe 3 bánh động cơ chở người); 345 gán motorcycle là sai lớp,R-02 (v1.1),v1.1,052,"img_004: đổi lớp box [437,100,416,347] thành car",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C014,img_004.jpg,Tuk-tuk là car theo quy tắc mới,R-02 (v1.1),v1.1,052,"img_004: đổi lớp box [74,71,414,519] thành car",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C015,img_004.jpg,"Gán person tài xế ngồi trong tuk-tuk (xe hở), 053 bỏ sót","R-01,R-14",v1.1,052,"img_004: thêm person [232,126,105,108], occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C016,img_004.jpg,"Gán person tài xế tuk-tuk thứ hai, 053 bỏ sót","R-01,R-14",v1.1,052,"img_004: thêm person [579,160,88,191], occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C017,img_005.jpg,Box van dừng ở đáy cản/bánh xe; box 053 kéo quá xuống vùng người,R-04,v1.1,052,"img_005: van dùng [59,25,901,325]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C018,img_005.jpg,"Xe trắng góc trên trái thân hộp liền khối, nóc cao: van",Định nghĩa van,v1.1,052,"img_005: box [0,74,81,97] đổi thành van, truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C019,img_007.jpg,Pickup Hilux là truck; 053 gán car (+can_review) sai lớp,R-03,v1.1,052,"img_007: box [384,240,225,169] đổi thành truck, bỏ can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C020,img_008.jpg,"Gán motorcycle cắt mép dưới trái, 053 bỏ sót",R-01,v1.1,052,"img_008: giữ motorcycle [1,562,177,75], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C021,img_008.jpg,Không gán: là hình nhân vật in trên poster cửa hàng,R-05,v1.1,052,"img_008: xóa person [0,161,38,116]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C022,img_008.jpg,Xe khách phía xa là bus (lớp mới),R-02 (v1.1),v1.1,052,"img_008: box [628,163,103,121] đổi truck thành bus",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C023,img_008.jpg,"Gán person nền, 052 bỏ sót",R-04,v1.1,052,"img_008: thêm person [192,196,45,56]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C024,img_009.jpg,"Xe buýt mini là bus (lớp mới), không phải van",R-02 (v1.1),v1.1,052,"img_009: box [356,370,308,120] đổi van thành bus",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C025,img_009.jpg,Không gán hành khách sau kính xe kín,R-14,v1.1,052,"img_009: xóa person [373,398,19,29]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C026,img_009.jpg,Không gán hành khách sau kính xe kín,R-14,v1.1,052,"img_009: xóa person [597,400,26,23]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C027,img_012.jpg,"Gán car Mazda CX-5, 053 bỏ sót",Định nghĩa car,v1.1,052,"img_012: thêm car [0,282,251,180]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C028,img_012.jpg,Pickup cận cảnh là truck; giữ một box duy nhất,R-03,v1.1,052,"img_012: truck [291,248,666,381], truncated=yes, xóa box trùng nếu có",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C029,img_012.jpg,"Xe tải thùng phía sau pickup là truck, 053 bỏ sót",Định nghĩa truck,v1.1,052,"img_012: thêm truck [326,207,156,193], occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C030,img_012.jpg,Gán car nhỏ phía xa (cao 29 px),R-08,v1.1,052,"img_012: thêm car [296,295,30,29]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C031,img_012.jpg,Pickup là truck; 053 gán car sai lớp,R-03,v1.1,052,"img_012: box [291,248,666,381] lớp truck",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C032,img_013.jpg,"Gán motorcycle đỗ (cao 41 px), 053 bỏ sót",R-01,v1.1,052,"img_013: thêm motorcycle [253,443,61,41]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C033,img_016.jpg,Xe trắng sau tuk-tuk là pickup: truck,R-03,v1.1,052,"img_016: box [0,275,328,252] lớp truck, bỏ can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C034,img_016.jpg,Pickup là truck; 052 gán car sai lớp,R-03,v1.1,052,"img_016: dùng truck [1,277,327,259], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C035,img_019.jpg,"Không dùng một box person cho cả đám đông; đám đông thỏa ngưỡng nên dùng ignore_region, hàng đầu gán riêng",R-09,v1.1,052,"img_019: đổi box [2,28,958,382] thành ignore_region; thêm person riêng cho người hàng đầu rõ",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C036,img_021.jpg,"Gán person người đi xe máy, 052 bỏ sót",R-01,v1.1,052,"img_021: thêm person [150,253,62,95]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C037,img_022.jpg,"Sidecar: box motorcycle bao cả thùng bên; ca đã rõ, bỏ can_review",R-13,v1.1,052,"img_022: motorcycle [483,477,203,144], bỏ can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C038,img_022.jpg,Lấy box 053 (bao cả thùng bên); box 345 thiếu thùng,R-13,v1.1,052,"img_022: motorcycle dùng [483,477,203,144]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C039,img_023.jpg,"Gán person đứng bên trái, 052 bỏ sót",R-04,v1.1,052,"img_023: thêm person [90,132,24,62]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C040,img_024.jpg,"Gán car cam cắt mép dưới trái, 052 bỏ sót",Định nghĩa car,v1.1,052,"img_024: thêm car [1,540,194,175], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C041,img_024.jpg,"Xe vàng trên nóc là vỏ xe trưng bày (không kính, không nội thất): không gán",R-05 (v1.1),v1.1,052,"img_024: xóa car [242,40,460,209]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C042,img_027.jpg,Tượng đá hình pickup: không gán,R-05,v1.1,052,"img_027: xóa truck [353,204,525,288]; ảnh không còn box",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C043,img_030.jpg,"Gán person nhân viên giữ xe, 052 bỏ sót",R-04,v1.1,052,"img_030: thêm person [698,26,83,245]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C044,img_030.jpg,Bãi xe thỏa ngưỡng đám đông; xe bị che >= 50% đưa vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [233,130,134,219], phủ ignore_region vùng xe phía sau",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C045,img_030.jpg,Xe trước giữa che < 50%: gán riêng motorcycle,R-09,v1.1,052,"img_030: giữ motorcycle [347,277,590,434], occluded_level=1",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C046,img_030.jpg,Xe bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [350,173,143,141] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C047,img_030.jpg,Xe bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [82,177,253,238] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C048,img_030.jpg,Xe mép phải bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [905,88,55,134] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C049,img_030.jpg,"Không gán: không thấy đầu hoặc thân riêng, chồng lên vùng nhân viên",Định nghĩa person,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C050,img_030.jpg,Xe trước trái che < 50%: gán riêng motorcycle,R-09,v1.1,052,"img_030: giữ motorcycle [3,378,478,335], truncated=yes, occluded_level=1",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C051,img_030.jpg,Như C048: xe mép phải vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [905,88,55,134]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C052,img_030.jpg,Như C049: không gán,Định nghĩa person,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C053,img_034.jpg,"Gán person người đi xe máy phía xa (cao 46 px), 345 bỏ sót",R-01,v1.1,052,"img_034: thêm person [174,232,23,46]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C054,img_035.jpg,Xe lam là car theo quy tắc mới; box không bao bao hàng chất trên nóc,"R-02 (v1.1),R-07",v1.1,052,"img_035: giữ car [381,209,136,202]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C055,img_035.jpg,Xe lam thứ hai là car theo quy tắc mới,R-02 (v1.1),v1.1,052,"img_035: giữ car [736,215,104,197]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C056,img_037.jpg,Xe khách xanh phía phải là bus (lớp mới),R-02 (v1.1),v1.1,052,"img_037: box [714,235,52,116] đổi truck thành bus, occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C057,img_037.jpg,Pickup có nắp thùng vẫn là truck; bỏ can_review,R-03,v1.1,052,"img_037: truck [218,139,508,357], bỏ can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C058,img_040.jpg,Tuk-tuk bên trái là car theo quy tắc mới,R-02 (v1.1),v1.1,052,"img_040: giữ car [74,96,117,146]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C059,img_040.jpg,Box thừa: trùng với taxi đã có box,R-04,v1.1,052,"img_040: xóa car [15,251,562,381]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C060,img_040.jpg,Box taxi bao cả biển TAXI-METER trên nóc; lấy box 053,R-04,v1.1,052,"img_040: taxi dùng [20,143,940,489], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+L01,img_009.jpg,"Thêm lớp bus: xe buýt, xe buýt mini, xe khách. Rà cả lô, đổi ignore_region/van/truck sang bus","R-02 (v1.1), taxonomy v1.1",v1.1,052,"Cả lô: img_008, 009, 021, 031, 037, 040 và mọi xe buýt khác",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
+L02,img_023.jpg,"Thêm lớp bicycle: xe đạp và xe 3 bánh thô sơ (xích lô). Rà cả lô, gán bicycle","R-02 (v1.1), taxonomy v1.1",v1.1,052,"Cả lô: img_003, 006, 023, 029, 039 và mọi xe đạp/xích lô khác",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
+L03,img_004.jpg,"Xe 3 bánh có động cơ chở người (tuk-tuk, xe lam) gán car. Rà cả lô",R-02 (v1.1),v1.1,052,"Cả lô: img_004, 016, 035, 040",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
+L04,img_038.jpg,"Vật có hình dạng xe nhưng không phải xe (đồ chơi, quà lưu niệm, mô hình, vỏ xe) không gán. Rà cả lô",R-05 (v1.1),v1.1,052,"Cả lô: img_024 (xe vàng trên nóc), 027, 038; xóa box nếu có",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
+L05,img_015.jpg,"Cả 3 người gán để mặc định occluded_level=0, truncated=no cho mọi box. Gán lại 2 thuộc tính theo ngưỡng v1.0",Mục 2.2,v1.1,052,Cả lô: rà occluded_level và truncated cho mọi box (ví dụ img_015 xe cắt mép),053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
+L06,img_009.jpg,"Người sau kính xe kín (xe buýt, ô tô) không gán; người trên xe hở (xe máy, tuk-tuk, xích lô, xe đạp) vẫn gán",R-14 (mới),v1.1,052,"Cả lô: img_009, 031 và các xe buýt có hành khách",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,lo
