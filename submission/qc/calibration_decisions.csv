@@ -16,7 +16,7 @@ C014,img_004.jpg,Tuk-tuk là car theo quy tắc mới,R-02 (v1.1),v1.1,052,"img_
 C015,img_004.jpg,"Gán person tài xế ngồi trong tuk-tuk (xe hở), 053 bỏ sót","R-01,R-14",v1.1,052,"img_004: thêm person [232,126,105,108], occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C016,img_004.jpg,"Gán person tài xế tuk-tuk thứ hai, 053 bỏ sót","R-01,R-14",v1.1,052,"img_004: thêm person [579,160,88,191], occluded_level=2",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C017,img_005.jpg,Box van dừng ở đáy cản/bánh xe; box 053 kéo quá xuống vùng người,R-04,v1.1,052,"img_005: van dùng [59,25,901,325]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
-C018,img_005.jpg,"Xe trắng góc trên trái thân hộp liền khối, nóc cao: van",Định nghĩa van,v1.1,052,"img_005: box [0,74,81,97] đổi thành van, truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C018,img_005.jpg,"Xe trắng góc trên trái đuôi vuông, nóc cao: van; chỉ thấy phần đuôi nên tick can_review",Định nghĩa van,v1.1,052,"img_005: box [0,74,81,97] đổi thành van, truncated=yes, can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C019,img_007.jpg,Pickup Hilux là truck; 053 gán car (+can_review) sai lớp,R-03,v1.1,052,"img_007: box [384,240,225,169] đổi thành truck, bỏ can_review",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C020,img_008.jpg,"Gán motorcycle cắt mép dưới trái, 053 bỏ sót",R-01,v1.1,052,"img_008: giữ motorcycle [1,562,177,75], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C021,img_008.jpg,Không gán: là hình nhân vật in trên poster cửa hàng,R-05,v1.1,052,"img_008: xóa person [0,161,38,116]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
@@ -39,7 +39,7 @@ C037,img_022.jpg,"Sidecar: box motorcycle bao cả thùng bên; ca đã rõ, b�
 C038,img_022.jpg,Lấy box 053 (bao cả thùng bên); box 345 thiếu thùng,R-13,v1.1,052,"img_022: motorcycle dùng [483,477,203,144]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C039,img_023.jpg,"Gán person đứng bên trái, 052 bỏ sót",R-04,v1.1,052,"img_023: thêm person [90,132,24,62]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C040,img_024.jpg,"Gán car cam cắt mép dưới trái, 052 bỏ sót",Định nghĩa car,v1.1,052,"img_024: thêm car [1,540,194,175], truncated=yes",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
-C041,img_024.jpg,"Xe vàng trên nóc là vỏ xe trưng bày (không kính, không nội thất): không gán",R-05 (v1.1),v1.1,052,"img_024: xóa car [242,40,460,209]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C041,img_024.jpg,"Xe vàng trên nóc là vỏ xe/mô hình trưng bày (không kính, không nội thất, khung hở): không gán",R-05 (v1.1),v1.1,052,"img_024: xóa car [242,40,460,209]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C042,img_027.jpg,Tượng đá hình pickup: không gán,R-05,v1.1,052,"img_027: xóa truck [353,204,525,288]; ảnh không còn box",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C043,img_030.jpg,"Gán person nhân viên giữ xe, 052 bỏ sót",R-04,v1.1,052,"img_030: thêm person [698,26,83,245]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C044,img_030.jpg,Bãi xe thỏa ngưỡng đám đông; xe bị che >= 50% đưa vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [233,130,134,219], phủ ignore_region vùng xe phía sau",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
@@ -47,10 +47,10 @@ C045,img_030.jpg,Xe trước giữa che < 50%: gán riêng motorcycle,R-09,v1.1,
 C046,img_030.jpg,Xe bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [350,173,143,141] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C047,img_030.jpg,Xe bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [82,177,253,238] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C048,img_030.jpg,Xe mép phải bị che >= 50%: vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [905,88,55,134] (nằm trong ignore_region)",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
-C049,img_030.jpg,"Không gán: không thấy đầu hoặc thân riêng, chồng lên vùng nhân viên",Định nghĩa person,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C049,img_030.jpg,"Nhóm chốt không gán: người nền phía sau nhân viên, nhỏ (33 px), bị xe che phần dưới",R-09,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C050,img_030.jpg,Xe trước trái che < 50%: gán riêng motorcycle,R-09,v1.1,052,"img_030: giữ motorcycle [3,378,478,335], truncated=yes, occluded_level=1",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C051,img_030.jpg,Như C048: xe mép phải vào ignore_region,R-09,v1.1,052,"img_030: xóa motorcycle [905,88,55,134]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
-C052,img_030.jpg,Như C049: không gán,Định nghĩa person,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
+C052,img_030.jpg,"Nhóm chốt không gán: người nền phía sau nhân viên, nhỏ (33 px), bị xe che phần dưới",R-09,v1.1,052,"img_030: xóa person [697,54,30,33]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C053,img_034.jpg,"Gán person người đi xe máy phía xa (cao 46 px), 345 bỏ sót",R-01,v1.1,052,"img_034: thêm person [174,232,23,46]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C054,img_035.jpg,Xe lam là car theo quy tắc mới; box không bao bao hàng chất trên nóc,"R-02 (v1.1),R-07",v1.1,052,"img_035: giữ car [381,209,136,202]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh
 C055,img_035.jpg,Xe lam thứ hai là car theo quy tắc mới,R-02 (v1.1),v1.1,052,"img_035: giữ car [736,215,104,197]",053 kiểm lại trên labels_calibrated sau sửa: chưa kiểm,anh

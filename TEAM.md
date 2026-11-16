@@ -2,8 +2,8 @@
 
 - Tên nhóm: NoName
 - Mã thành viên (ba chữ số): 052, 053, 345
-- Người điều phối: <<mã>>
-- Người review bản cuối: <<mã, khác người sửa nhãn calibration>>
+- Người điều phối: 052 (đồng thời sửa nhãn calibration trong CVAT)
+- Người review bản cuối: 053 (kiểm lại calibration và review QC vòng 1); 345 viết báo cáo QC
 - Commit chốt bài (điền ở kênh nộp sau khi commit):
 
 ## Kết quả tóm tắt (điền cuối bài)
