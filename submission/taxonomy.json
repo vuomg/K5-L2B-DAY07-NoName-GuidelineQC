@@ -1,13 +1,13 @@
 {
-  "version": "v0",
+  "version": "v1.0",
   "ignore_class": "ignore_region",
   "classes": [
-    {"name": "car", "definition": "Ô tô con, SUV."},
-    {"name": "truck", "definition": "Xe tải, xe có thùng hàng riêng."},
-    {"name": "van", "definition": "Xe thùng kín cỡ nhỏ."},
-    {"name": "motorcycle", "definition": "Xe máy, mô tô."},
-    {"name": "person", "definition": "Người đi bộ hoặc người ngồi trên xe."},
-    {"name": "ignore_region", "definition": "Vùng bỏ qua (không phải vật): nơi không gán từng vật, bỏ sót ở đây không tính là lỗi."}
+    {"name": "car", "definition": "Xe 4 bánh chở người, mui liền từ kính trước tới đuôi, không có thùng hàng tách cabin (sedan, hatchback, SUV, wagon, taxi). Pickup là truck."},
+    {"name": "truck", "definition": "Xe >= 4 bánh có khoang chở hàng tách rời cabin: pickup (kể cả có nắp thùng), xe tải thùng hở, thùng kín, mui bạt, đầu kéo. Xe buýt không thuộc lớp này (R-02, R-03)."},
+    {"name": "van", "definition": "Xe 4 bánh thân liền một khối, nóc cao, mũi xe ngắn (<= 1/4 chiều dài thân): minivan, xe 16 chỗ."},
+    {"name": "motorcycle", "definition": "Xe 2 bánh có động cơ (xe số, tay ga, xe điện, mô tô), kể cả sidecar (box bao cả thùng bên). Chỉ gán khi thấy >= 25% xe; box chỉ ôm phần xe (R-01, R-13)."},
+    {"name": "person", "definition": "Người thật nhìn thấy trực tiếp, thấy ít nhất đầu hoặc thân, mọi tư thế kể cả người lái xe. Mỗi người một box. Không gán tượng, ma-nơ-canh, hình in, phản chiếu (R-05)."},
+    {"name": "ignore_region", "definition": "Vùng bỏ qua (không phải vật): phương tiện ngoài taxonomy cao >= 50 px (R-02), xe được chở thấy < 25% (R-06), cụm vật nhỏ < 20 px (R-08), đám đông theo R-09, vật nhòe không nhận ra lớp (R-10). Bỏ sót trong vùng này không tính lỗi."}
   ],
   "attributes": [
     {"name": "occluded_level", "type": "select", "values": ["0", "1", "2", "3"], "default": "0"},
