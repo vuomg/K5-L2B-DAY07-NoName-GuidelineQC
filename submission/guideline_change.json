@@ -1,0 +1,5 @@
+{
+  "kind": "semantic",
+  "summary": "v1.0 -> v1.1: thêm lớp bus và bicycle; xe 3 bánh có động cơ chở người (tuk-tuk, xe lam) gán car; xích lô gán bicycle; vật có hình dạng xe (đồ chơi, quà lưu niệm, mô hình, vỏ xe) không gán; thêm R-14 (không gán người sau kính xe kín); rà lại occluded_level/truncated cả lô. Phạm vi: cả lô 40 ảnh (quyết định L01-L06, pham_vi=lo), kiểm lại toàn bộ sau sửa.",
+  "taxonomy_review": "taxonomy_v1.1.json: thêm bus, bicycle; đổi định nghĩa car, van, person. Thuộc tính và rules giữ nguyên. Rà lại: mọi box van/truck/ignore_region trên xe buýt, mọi tuk-tuk/xe lam, mọi xe đạp/xích lô chưa gán."
+}
