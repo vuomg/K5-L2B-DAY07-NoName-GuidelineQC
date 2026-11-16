@@ -6,7 +6,7 @@
 
 - Mục đích và giới hạn sử dụng: Thực hành đặc tả và QC nhãn bbox 2D (người và phương tiện) cho camera giao thông đô thị. 40 ảnh được tuyển chọn để luyện ca biên (tượng, phản chiếu, tuk-tuk, đám đông), không đại diện cho dữ liệu vận hành; không dùng để huấn luyện mô hình thật.
 - Nguồn và phép sử dụng dữ liệu: 40 ảnh Wikimedia Commons, giấy phép CC BY / CC BY-SA / CC0 / public domain theo `data/ATTRIBUTION.csv`; chia sẻ lại phải giữ ghi công, ảnh CC BY-SA phải chia sẻ tương tự. Không sửa hoặc đổi tên ảnh.
-- Manifest và checksum nhãn cuối: <<submission/qc/batch_manifest.json, SHA-256 của labels_calibrated.json>>
+- Manifest và checksum nhãn cuối: `submission/qc/batch_manifest.json`; `labels_calibrated.json` (40 ảnh, 309 annotation) SHA-256 `e5dc5770687292b5d07c011270d254c353c44b65796e36a6cdf1ed3c12a6280a`
 - Guideline và taxonomy khi gán / khi bàn giao: Gán theo `guideline_v1.0_agreed.md` + `taxonomy.json` v1.0 (5 lớp + `ignore_region`). Bàn giao theo `guideline_v1.1_calibrated.md` + `taxonomy_v1.1.json` v1.1: thay đổi **semantic** (`guideline_change.json`), thêm `bus`, `bicycle`; tuk-tuk/xe lam → `car`; xích lô → `bicycle`; vỏ xe, đồ lưu niệm không gán; thêm R-14. Mục `rules` (ngưỡng) không đổi.
 
 ## 2. Phân công và đồng thuận trước calibration
@@ -20,7 +20,7 @@
 ## 3. Calibration và kiểm lại
 
 - Ca đã xử lý, rule ID, bản sửa và người xác nhận: 60 ca IAA (C001–C060) + 6 quyết định cả lô (L01–L06) trong `calibration_decisions.csv`; mỗi dòng có quyết định, rule ID, phiếu sửa, người chốt và người kiểm lại. Theo loại: 45 bỏ sót/thừa, 4 IoU thấp, 3 sai lớp, 8 cờ `can_review`. Tóm tắt nhóm ca ở mục 7 của guideline v1.1. Người kiểm lại: <<053, kết quả>>.
-- Tác động v1.1 lên nhãn và ảnh: Phạm vi cả lô 40/40 ảnh. Mapping: `ignore_region`/`van`/`truck` trên xe buýt → `bus`; `ignore_region`/`motorcycle` trên tuk-tuk, xe lam → `car`; xe đạp, xích lô (chưa gán) → `bicycle`; vỏ xe (img_024), tượng xe (img_027) → xóa; hành khách sau kính (img_009) → xóa; rà lại `occluded_level`/`truncated` mọi box. Nhãn đồng thuận v1.0 được đổi sang danh mục v1.1 (`work/calib/consensus_v1.0_as_v1.1.json`) rồi sửa trong CVAT. COCO sau sửa: <<submission/qc/labels_calibrated_<hash>.json>>.
+- Tác động v1.1 lên nhãn và ảnh: Phạm vi cả lô 40/40 ảnh. Mapping: `ignore_region`/`van`/`truck` trên xe buýt → `bus`; `ignore_region`/`motorcycle` trên tuk-tuk, xe lam → `car`; xe đạp, xích lô (chưa gán) → `bicycle`; vỏ xe (img_024), tượng xe (img_027) → xóa; hành khách sau kính (img_009) → xóa; rà lại `occluded_level`/`truncated` mọi box. Nhãn đồng thuận v1.0 được đổi sang danh mục v1.1 (`work/calib/consensus_v1.0_as_v1.1.json`) rồi sửa trong CVAT. COCO sau sửa: `submission/qc/labels_calibrated_1fbb16530508497a.json` (export CVAT Task 18). Bước tự động (`work/apply_decisions.py`) áp dụng các thao tác đã ghi của C001–C060 và bỏ 20 box trùng. Sửa tay trong CVAT: thêm 7 box (`bicycle` ở img_003, 006, 039; `bus` ở img_021, 037, 040; `car` tuk-tuk ở img_016). **Chưa làm** khi bàn giao vòng 1: thuộc tính `occluded_level`/`truncated` cho phần lớn box (292/309 vẫn `0/no`), `bicycle` ở img_023, 029, `bus` ở img_031, `ignore_region` đám đông ở img_019, 021, 030, 032 (vùng ở img_019 bị mất sau import).
 - Tham chiếu bằng chứng khi Rework: <<không áp dụng nếu vòng 1 không Rework; nếu có: vòng cũ, vùng sửa, vòng mới>>
 
 ## 4. Kết quả duyệt
